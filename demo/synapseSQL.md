@@ -8,6 +8,35 @@ Below image is Synapse Analytics Pipeline.
 # Demo read Parquet file with SQL Queries
 
 In this demo, it will read a parquet format file with using SQL Queries. 
+ 
+## Create a Synapse workspace in the Azure portal
 
-## First Step 
-In this demo, it will read a parquet format file with using SQL Queries. 
+![image](https://user-images.githubusercontent.com/71728495/150852749-f843dd95-527c-4a05-b968-eb8f5f92e631.png)
+
+## Open Synapse Studio
+Since we don't have SQL connection from local, we will launch Synapse Studio for demo purpose.
+
+![image](https://user-images.githubusercontent.com/71728495/150853438-71a327f9-bbb6-4c12-add0-4e1c9017182f.png)
+
+## Place sample data into datalake service
+
+Use a 100k row sample data of NYX Taxi Cab data.
+
+Download link: https://azuresynapsestorage.blob.core.windows.net/sampledata/NYCTaxiSmall/NYCTripSmall.parquet
+
+Place in Azure Data Lake Storage Gen2
+
+![image](https://user-images.githubusercontent.com/71728495/150854063-16a78b98-114e-4564-a873-a17660fe36cb.png)
+
+## Run Synapse Studio
+Access develop mode, you can use different method such as Notebook (Python) or SQL query
+
+![image](https://user-images.githubusercontent.com/71728495/150854632-cd30caa3-672c-4fc8-ab6d-3e51cd6c4bea.png)
+
+## The Built-in serverless SQL pool
+Severless SQL pools let you load Spark/Hive table (NoSQL database) using SQL Queries.
+
+![image](https://user-images.githubusercontent.com/71728495/150854968-2e55a870-157b-4edf-96ec-d10c4c2c29cb.png)
+
+
+
